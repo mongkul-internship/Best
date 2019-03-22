@@ -1,31 +1,17 @@
-<div class="flex-center position-ref full-height">
-    @if (Route::has('login'))
-        <div class="top-right links">
-            @auth
-                <a href="{{ url('/home') }}">Home</a>
-            @else
-                <a href="{{ route('login') }}">Login</a>
+<div style="padding-top: 20vh">
+    <div class="classynav">
+        <nav class="container" style="background-color: #6610f2;padding: 10px;">
+            <div class="links">
+                <ul>
+                    <li class="active"><a href="{{ route('index') }}"><h3>Show</h3></a></li>
+                    <li class="active"><a href="{{ route('create') }}"><h3>Create</h3></a></li>
+                    <li class="active"><a href="https://laravel-news.com"><h3>News</h3></a></li>
+                    <li class="active"><a href="https://blog.laravel.com"><h3>Blog</h3></a></li>
+                    <li class="active"><a href="https://laravel.com/docs"><h3>Show</h3></a></li>
+                </ul>
 
-                @if (Route::has('register'))
-                    <a href="{{ route('register') }}">Register</a>
-                @endif
-            @endauth
-        </div>
-    @endif
-
-    <div class="content">
-        <div class="title m-b-md">
-            Laravel
-        </div>
-
-        <div class="links">
-            <a href="https://laravel.com/docs">Docs</a>
-            <a href="https://laracasts.com">Laracasts</a>
-            <a href="https://laravel-news.com">News</a>
-            <a href="https://blog.laravel.com">Blog</a>
-            <a href="https://nova.laravel.com">Nova</a>
-            <a href="https://forge.laravel.com">Forge</a>
-            <a href="https://github.com/laravel/laravel">GitHub</a>
-        </div>
+            </div>
+        </nav>
     </div>
+
 </div>
